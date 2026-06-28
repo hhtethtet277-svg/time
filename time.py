@@ -10,7 +10,7 @@ def banner():
     print(Fore.GREEN + "========================================")
     print(Fore.CYAN + Style.BRIGHT + "            T I M E R  P R O            ")
     print(Fore.GREEN + "========================================")
-    print(Fore.YELLOW + "   Project: Voucher Code Timmer Scan")
+    print(Fore.YELLOW + "   Project: Voucher Code Timer Scan")
     print(Fore.WHITE + "   Developer: RSHOKA (@Nain663)")
     print(Fore.MAGENTA + f"   Time: {time.strftime('%H:%M:%S')}")
     print(Fore.GREEN + "========================================\n")
