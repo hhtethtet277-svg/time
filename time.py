@@ -108,7 +108,7 @@ def get_balance(active_session_id):
         'accept': 'application/json, text/javascript, */*; q=0.01',
         'accept-language': 'en-US,en;q=0.9,my;q=0.8',
         'content-type': 'application/json;',
-        'referer': f'https://portal-as.ruijienetworks.com/download/static/auth/src/balance.html?RES=./../expand/res/4ukmferxbdgmt3m49po&sessionId={active_session_id}&lang=en_US&redirectUrl=https://www.ruijienetwoacom&authTypeype=15',
+        'referer': f'https://portal-as.ruijienetworks.com/download/static/maccauth/src/balance.html?RES=./../expand/res/4ukmferxbdgmt3m49po&sessionId={active_session_id}&lang=en_US&redirectUrl=https://www.ruijienetwoacom&authTypeype=15',
         'sec-ch-ua': '"Chromium";v="139", "Not;A=Brand";v="99"',
         'sec-ch-ua-mobile': '?0',
         'sec-ch-ua-platform': '"Linux"',
@@ -122,7 +122,7 @@ def get_balance(active_session_id):
     
     try:
         response = requests.get(
-            f'https://portal-as.ruijienetworks.com/api/macc2/balance/getBalance/{active_session_id}',
+            f'https://portal-as.ruijienetworks.com/api/auth/balance/getBalance/{active_session_id}',
             headers=headers,
         )
         return response.json()
